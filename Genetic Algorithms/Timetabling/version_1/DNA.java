@@ -32,12 +32,7 @@ public class DNA {
         Random rand = new Random();
         for(int i = 0; i < rowSize; i++) {
             for(int j = 0; j < colSize; j++) {
-                if(rand.nextInt(2) == 1) {
-                    g[i][j] = 1;
-                }
-                else {
-                    g[i][j] = 0;
-                }
+                g[i][j] = rand.nextInt(2);
             }
         }       
         return g;
@@ -72,9 +67,18 @@ public class DNA {
     }
     
     public void print() {
+        int prof = 0;
+        for(int i = 0; i < Timetabling.COL_SIZE; i++) {
+            System.out.print("Prof-" + prof + "  ");
+            prof++;
+            prof = prof%Timetabling.PROF_QTY;
+        }
+        
+        System.out.println("");
+        
         for(int i = 0; i < this.genes.length; i++) {
             for(int j = 0; j < this.genes[i].length; j++) {
-                System.out.print(this.genes[i][j] + " ");
+                System.out.print(this.genes[i][j] + "\t");
             }
             System.out.println("");
         }
