@@ -5,7 +5,7 @@ import java.util.Random;
 /*
  *  The array of genes represent the following matrix using 3 professors and 2 terms:
  *      
- *           1st Term        |       2nd Term     
+ *                                 1st Term                               |                             2nd Term     
  *   |        Prof1         |        Prof2         |        Prof3         |        Prof1         |        Prof2         |        Prof3         |
  *  0|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|
  *  1|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|
