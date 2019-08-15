@@ -11,7 +11,7 @@ import java.util.Random;
  *  1|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|-1 or (rand(classQty))|
  *
  *  This is a 2x6 matrix
- *  The line indicates the time of the subject
+ *  The line indicates the hour of the subject
  *  The column indicates the professor
  *  -1 means that the professor will not teach
  *  If not -1, the value indicates the classroom
