@@ -27,7 +27,7 @@ public class TimeGrid {
 
     private int checkSameRoom(int row) {
         int colisions = 0;
-        Set mySet = new HashSet();
+        Set<Integer> mySet = new HashSet<>();
         
         for (int j = 0; j < Timetabling.COL_SIZE; j++) {
             if (this.dna.getGeneAt(row, j) != -1) {
